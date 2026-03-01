@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kant-en-klare Nederlandstalige Instagram templates voor personal trainers. Stop uren kwijt zijn aan content — start vandaag met professioneel posten.">
+  <meta name="keywords" content="personal trainer social media templates, instagram templates personal trainer, content personal trainer nederland, fitness coach social media">
+  <meta property="og:title" content="FitContent NL — Instagram Templates voor Personal Trainers">
+  <meta property="og:description" content="Kant-en-klare Nederlandstalige social media content voor PT's. 30 templates, 30 captions, direct klaar om te posten.">
+  <meta property="og:type" content="website">
+  <title>FitContent NL — Instagram Templates voor Personal Trainers</title>
+
+  <!-- Google Fonts: Barlow Condensed + Barlow -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================================
+       DESIGN SYSTEM — FitContent NL
+       Primary: #0EA5E9 | Secondary: #38BDF8 | CTA: #F97316
+       Background: #F0F9FF | Text: #0C4A6E
+    ============================================================ */
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary: #0EA5E9;
+      --secondary: #38BDF8;
+      --cta: #F97316;
+      --cta-hover: #EA6C0A;
+      --bg: #F0F9FF;
+      --text: #0C4A6E;
+      --text-muted: #475569;
+      --text-light: #64748B;
+      --white: #FFFFFF;
+      --border: #E0F2FE;
+      --card-bg: #FFFFFF;
+      --popular-bg: #0EA5E9;
+      --font-heading: 'Barlow Condensed', sans-serif;
+      --font-body: 'Barlow', sans-serif;
+      --shadow-sm: 0 1px 3px rgba(14, 165, 233, 0.08);
+      --shadow-md: 0 4px 16px rgba(14, 165, 233, 0.12);
+      --shadow-lg: 0 8px 32px rgba(14, 165, 233, 0.18);
+      --radius: 12px;
+      --transition: 200ms ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* ===== LAYOUT ===== */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      right: 16px;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: var(--shadow-md);
+    }
+
+    .navbar-logo {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 22px;
+      color: var(--primary);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+
+    .navbar-logo span {
+      color: var(--cta);
+    }
+
+    .navbar-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .navbar-links a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+      transition: color var(--transition);
+    }
+
+    .navbar-links a:hover {
+      color: var(--primary);
+    }
+
+    .navbar-cta {
+      background: var(--cta);
+      color: var(--white) !important;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-weight: 600 !important;
+      transition: background var(--transition), transform var(--transition) !important;
+      cursor: pointer;
+    }
+
+    .navbar-cta:hover {
+      background: var(--cta-hover) !important;
+      color: var(--white) !important;
+    }
+
+    .navbar-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+
+    .navbar-hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: all var(--transition);
+    }
+
+    @media (max-width: 768px) {
+      .navbar-hamburger { display: flex; }
+      .navbar-links {
+        display: none;
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 16px;
+        flex-direction: column;
+        gap: 4px;
+        box-shadow: var(--shadow-lg);
+      }
+      .navbar-links.open { display: flex; }
+      .navbar-links li { width: 100%; }
+      .navbar-links a { display: block; padding: 10px 12px; border-radius: 8px; }
+      .navbar-links a:hover { background: var(--bg); }
+      .navbar-cta { text-align: center; }
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding-top: 160px;
+      padding-bottom: 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(14,165,233,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(14, 165, 233, 0.1);
+      color: var(--primary);
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      border: 1px solid rgba(14, 165, 233, 0.2);
+    }
+
+    .hero-badge-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--cta);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.2); }
+    }
+
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(42px, 7vw, 76px);
+      font-weight: 800;
+      line-height: 1.05;
+      color: var(--text);
+      margin-bottom: 24px;
+      letter-spacing: -0.01em;
+    }
+
+    .hero h1 .highlight {
+      color: var(--primary);
+    }
+
+    .hero h1 .underline-cta {
+      color: var(--cta);
+      position: relative;
+    }
+
+    .hero-subtitle {
+      font-size: 19px;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 40px;
+      line-height: 1.65;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--cta);
+      color: var(--white);
+      padding: 16px 32px;
+      border-radius: 10px;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: none;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+      cursor: pointer;
+      border: none;
+      letter-spacing: 0.02em;
+      box-shadow: 0 4px 16px rgba(249, 115, 22, 0.35);
+    }
+
+    .btn-primary:hover {
+      background: var(--cta-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(249, 115, 22, 0.45);
+    }
+
+    .btn-primary:focus-visible {
+      outline: 3px solid var(--cta);
+      outline-offset: 3px;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--primary);
+      padding: 16px 28px;
+      border-radius: 10px;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 18px;
+      text-decoration: none;
+      border: 2px solid var(--primary);
+      transition: all var(--transition);
+      cursor: pointer;
+      letter-spacing: 0.02em;
+    }
+
+    .btn-secondary:hover {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .btn-secondary:focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 3px;
+    }
+
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: var(--text-light);
+      font-size: 14px;
+    }
+
+    .hero-avatars {
+      display: flex;
+    }
+
+    .hero-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2px solid var(--white);
+      margin-left: -8px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 12px;
+      color: white;
+    }
+
+    .hero-avatar:first-child { margin-left: 0; }
+
+    /* ===== STATS ===== */
+    .stats {
+      background: var(--white);
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 15px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ===== PROBLEM SECTION ===== */
+    .problem {
+      background: var(--text);
+      color: var(--white);
+      padding: 80px 0;
+    }
+
+    .problem h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(30px, 5vw, 48px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+
+    .problem-intro {
+      font-size: 18px;
+      color: rgba(255,255,255,0.75);
+      max-width: 560px;
+      margin-bottom: 40px;
+      line-height: 1.65;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .pain-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .pain-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .pain-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .pain-text strong {
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: var(--white);
+    }
+
+    .pain-text span {
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .solution-card {
+      background: var(--primary);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .solution-card h3 {
+      font-family: var(--font-heading);
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .solution-card p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .problem-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===== PRICING ===== */
+    #prijzen {
+      background: var(--bg);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-family: var(--font-heading);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+
+    .section-header h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .section-header p {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+
+    .pricing-card {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: 20px;
+      padding: 36px 28px;
+      position: relative;
+      transition: transform var(--transition), box-shadow var(--transition);
+      cursor: default;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .pricing-card.popular {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-lg);
+      transform: scale(1.03);
+    }
+
+    .pricing-card.popular:hover {
+      transform: scale(1.03) translateY(-4px);
+    }
+
+    .popular-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary);
+      color: white;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 13px;
+      padding: 4px 18px;
+      border-radius: 999px;
+      white-space: nowrap;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .plan-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      background: rgba(14, 165, 233, 0.08);
+    }
+
+    .plan-name {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .plan-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .plan-price {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+
+    .price-amount {
+      font-family: var(--font-heading);
+      font-size: 52px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    .price-currency {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text-muted);
+      align-self: flex-start;
+      margin-top: 8px;
+    }
+
+    .price-period {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .price-note {
+      font-size: 13px;
+      color: var(--cta);
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+
+    .features-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .check-icon {
+      width: 20px;
+      height: 20px;
+      background: rgba(14, 165, 233, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .pricing-card.popular .check-icon {
+      background: rgba(14, 165, 233, 0.15);
+    }
+
+    .btn-plan {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 14px 24px;
+      border-radius: 10px;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 17px;
+      text-decoration: none;
+      transition: all var(--transition);
+      cursor: pointer;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      background: transparent;
+      letter-spacing: 0.02em;
+    }
+
+    .btn-plan:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-plan:focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 3px;
+    }
+
+    .btn-plan.primary {
+      background: var(--cta);
+      color: white;
+      border-color: var(--cta);
+      box-shadow: 0 4px 16px rgba(249, 115, 22, 0.3);
+    }
+
+    .btn-plan.primary:hover {
+      background: var(--cta-hover);
+      border-color: var(--cta-hover);
+    }
+
+    .pricing-note {
+      text-align: center;
+      margin-top: 32px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 900px) {
+      .pricing-grid { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; }
+      .pricing-card.popular { transform: scale(1); }
+      .pricing-card.popular:hover { transform: translateY(-4px); }
+    }
+
+    /* ===== TEMPLATES PREVIEW ===== */
+    .templates-preview {
+      background: var(--white);
+      padding: 80px 0;
+      overflow: hidden;
+    }
+
+    .template-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+      margin-top: 48px;
+    }
+
+    .template-card {
+      aspect-ratio: 1;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 12px;
+      text-align: center;
+      padding: 16px;
+      transition: transform var(--transition);
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+      color: white;
+      line-height: 1.3;
+    }
+
+    .template-card:hover { transform: scale(1.05); }
+
+    .template-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(0,0,0,0.2) 0%, transparent 100%);
+    }
+
+    .template-card span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .tc-1 { background: linear-gradient(135deg, #0EA5E9, #38BDF8); }
+    .tc-2 { background: linear-gradient(135deg, #1E3A5F, #2563EB); }
+    .tc-3 { background: linear-gradient(135deg, #F97316, #FBBF24); }
+    .tc-4 { background: linear-gradient(135deg, #10B981, #34D399); }
+    .tc-5 { background: linear-gradient(135deg, #7C3AED, #A78BFA); }
+    .tc-6 { background: linear-gradient(135deg, #0C4A6E, #0EA5E9); }
+    .tc-7 { background: linear-gradient(135deg, #DC2626, #F97316); }
+    .tc-8 { background: linear-gradient(135deg, #059669, #10B981); }
+    .tc-9 { background: linear-gradient(135deg, #1E40AF, #3B82F6); }
+    .tc-10 { background: linear-gradient(135deg, #374151, #6B7280); }
+    .tc-11 { background: linear-gradient(135deg, #9D174D, #EC4899); }
+    .tc-12 { background: linear-gradient(135deg, #92400E, #D97706); }
+
+    @media (max-width: 768px) {
+      .template-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials {
+      background: var(--bg);
+      padding: 80px 0;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .stars {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 16px;
+    }
+
+    .star-icon {
+      color: #F59E0B;
+    }
+
+    .testimonial-text {
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.65;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .author-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 16px;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .author-name {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    .author-role {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 900px) {
+      .testimonials-grid { grid-template-columns: 1fr; max-width: 500px; margin: 48px auto 0; }
+    }
+
+    /* ===== HOW IT WORKS ===== */
+    .how-it-works {
+      background: var(--white);
+      padding: 80px 0;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-top: 48px;
+      position: relative;
+    }
+
+    .steps-grid::before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: calc(16.666% + 20px);
+      right: calc(16.666% + 20px);
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      z-index: 0;
+    }
+
+    .step {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-number {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      font-family: var(--font-heading);
+      font-size: 32px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      box-shadow: 0 4px 16px rgba(14, 165, 233, 0.3);
+    }
+
+    .step h3 {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .step p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    @media (max-width: 768px) {
+      .steps-grid { grid-template-columns: 1fr; }
+      .steps-grid::before { display: none; }
+    }
+
+    /* ===== FAQ ===== */
+    .faq {
+      background: var(--bg);
+      padding: 80px 0;
+    }
+
+    .faq-list {
+      max-width: 700px;
+      margin: 48px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      text-align: left;
+      transition: color var(--transition);
+    }
+
+    .faq-question:hover {
+      color: var(--primary);
+    }
+
+    .faq-question:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: -2px;
+    }
+
+    .faq-chevron {
+      flex-shrink: 0;
+      transition: transform var(--transition);
+      color: var(--primary);
+    }
+
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 300ms ease, padding 300ms ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+    }
+
+    .faq-answer p {
+      padding: 0 24px 20px;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ===== FINAL CTA ===== */
+    .final-cta {
+      background: linear-gradient(135deg, var(--text) 0%, #1E3A5F 100%);
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(14,165,233,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .final-cta h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(32px, 5vw, 56px);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .final-cta p {
+      font-size: 18px;
+      color: rgba(255,255,255,0.75);
+      max-width: 500px;
+      margin: 0 auto 40px;
+      line-height: 1.65;
+      position: relative;
+      z-index: 1;
+    }
+
+    .final-cta-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn-white {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--white);
+      color: var(--text);
+      padding: 16px 32px;
+      border-radius: 10px;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: none;
+      transition: all var(--transition);
+      cursor: pointer;
+      letter-spacing: 0.02em;
+    }
+
+    .btn-white:hover {
+      background: rgba(255,255,255,0.9);
+      transform: translateY(-2px);
+    }
+
+    .guarantee {
+      margin-top: 28px;
+      color: rgba(255,255,255,0.6);
+      font-size: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0A2540;
+      padding: 40px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-logo {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 20px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .footer-logo span { color: var(--cta); }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color var(--transition);
+    }
+
+    .footer-links a:hover { color: rgba(255,255,255,0.9); }
+
+    .footer-copy {
+      color: rgba(255,255,255,0.35);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Hoofdnavigatie">
+    <a href="#" class="navbar-logo" aria-label="FitContent NL homepage">FitContent<span>NL</span></a>
+    <button class="navbar-hamburger" aria-label="Menu openen" aria-expanded="false" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="navbar-links" id="navLinks" role="list">
+      <li><a href="#hoe-werkt-het">Hoe het werkt</a></li>
+      <li><a href="#prijzen">Prijzen</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="https://gum.co/fitcontent-pro" class="navbar-cta" target="_blank" rel="noopener">Direct starten →</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero sectie">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        Enige Nederlandstalige content voor PT's
+      </div>
+
+      <h1>
+        Stop uren verliezen<br>
+        aan <span class="highlight">content</span>.<br>
+        <span class="underline-cta">Begin gewoon te posten.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Kant-en-klare Instagram templates en captions speciaal voor personal trainers in Nederland en België.
+        Download, pas aan in Canva, en post — in minder dan 5 minuten.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#prijzen" class="btn-primary" aria-label="Bekijk pakketten en prijzen">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+          Bekijk pakketten
+        </a>
+        <a href="https://gum.co/fitcontent-gratis" class="btn-secondary" target="_blank" rel="noopener" aria-label="Download 5 gratis templates">
+          5 gratis templates →
+        </a>
+      </div>
+
+      <div class="hero-trust" role="img" aria-label="Meer dan 200 personal trainers gebruiken FitContent NL">
+        <div class="hero-avatars" aria-hidden="true">
+          <div class="hero-avatar">L</div>
+          <div class="hero-avatar">M</div>
+          <div class="hero-avatar">R</div>
+          <div class="hero-avatar">J</div>
+          <div class="hero-avatar">S</div>
+        </div>
+        <span>Vertrouwd door <strong>200+</strong> personal trainers in NL &amp; BE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" aria-label="Cijfers">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat" role="group" aria-label="200+ personal trainers">
+          <div class="stat-number" data-target="200" aria-label="200">0+</div>
+          <div class="stat-label">Tevreden personal trainers</div>
+        </div>
+        <div class="stat" role="group" aria-label="1500+ templates beschikbaar">
+          <div class="stat-number" data-target="1500" aria-label="1500">0+</div>
+          <div class="stat-label">Templates beschikbaar</div>
+        </div>
+        <div class="stat" role="group" aria-label="5 minuten om een post klaar te maken">
+          <div class="stat-number" aria-label="5">5</div>
+          <div class="stat-label">Minuten per post</div>
+        </div>
+        <div class="stat" role="group" aria-label="0 euro voor de eerste templates">
+          <div class="stat-number" aria-label="Gratis">€0</div>
+          <div class="stat-label">Om te starten (5 gratis)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEEM + OPLOSSING -->
+  <section class="problem" aria-label="Probleem en oplossing">
+    <div class="container">
+      <div class="problem-grid">
+        <div>
+          <h2>Herken jij dit als personal trainer?</h2>
+          <p class="problem-intro">
+            Je weet dat je moet posten. Je weet dat Instagram klanten oplevert.
+            Maar elke week vraag je jezelf af: <em>"Wat moet ik nú weer posten?"</em>
+          </p>
+          <ul class="pain-list" role="list">
+            <li class="pain-item">
+              <div class="pain-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+              </div>
+              <div class="pain-text">
+                <strong>Uren bezig met content maken</strong>
+                <span>Terwijl je liever traint met je klanten</span>
+              </div>
+            </li>
+            <li class="pain-item">
+              <div class="pain-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+              </div>
+              <div class="pain-text">
+                <strong>Posts die er niet professioneel uitzien</strong>
+                <span>En daardoor geen nieuwe klanten aantrekken</span>
+              </div>
+            </li>
+            <li class="pain-item">
+              <div class="pain-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+              </div>
+              <div class="pain-text">
+                <strong>Inconsistent posten of helemaal stoppen</strong>
+                <span>Weken niets, dan ineens 5 posts in 1 dag</span>
+              </div>
+            </li>
+            <li class="pain-item">
+              <div class="pain-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+              </div>
+              <div class="pain-text">
+                <strong>Engelstalige templates die niet passen</strong>
+                <span>Jouw klanten lezen liever Nederlands</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="solution-card">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-bottom:16px">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          <h3>De oplossing: kant-en-klaar in het Nederlands</h3>
+          <p>Download je templates, open Canva, verander je naam en foto — en post. Klaar in 5 minuten. Elke dag professioneel aanwezig op Instagram.</p>
+          <a href="#prijzen" class="btn-primary" style="display:inline-flex;margin-top:8px">
+            Bekijk pakketten →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMPLATE PREVIEW -->
+  <section class="templates-preview" aria-label="Voorbeeld templates">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Wat je krijgt</span>
+        <h2>Professionele templates voor elke situatie</h2>
+        <p>Motivatie, tips, voeding, transformaties, humor — voor elke post een template</p>
+      </div>
+
+      <div class="template-grid" role="list" aria-label="Voorbeeld template categorieën">
+        <div class="template-card tc-1" role="listitem">
+          <span>Motivatie post</span>
+        </div>
+        <div class="template-card tc-2" role="listitem">
+          <span>Training tip</span>
+        </div>
+        <div class="template-card tc-3" role="listitem">
+          <span>Voeding advice</span>
+        </div>
+        <div class="template-card tc-4" role="listitem">
+          <span>Transformatie</span>
+        </div>
+        <div class="template-card tc-5" role="listitem">
+          <span>Mindset quote</span>
+        </div>
+        <div class="template-card tc-6" role="listitem">
+          <span>Achter de schermen</span>
+        </div>
+        <div class="template-card tc-7" role="listitem">
+          <span>Challenge post</span>
+        </div>
+        <div class="template-card tc-8" role="listitem">
+          <span>Success story</span>
+        </div>
+        <div class="template-card tc-9" role="listitem">
+          <span>Workout tip</span>
+        </div>
+        <div class="template-card tc-10" role="listitem">
+          <span>Q&amp;A format</span>
+        </div>
+        <div class="template-card tc-11" role="listitem">
+          <span>Herstart post</span>
+        </div>
+        <div class="template-card tc-12" role="listitem">
+          <span>Seizoensthema</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="hoe-werkt-het" aria-label="Zo werkt het">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Zo simpel is het</span>
+        <h2>Van download naar geposte content in 3 stappen</h2>
+        <p>Geen design kennis nodig. Geen uren brainstormen. Gewoon doen.</p>
+      </div>
+
+      <div class="steps-grid" role="list">
+        <div class="step" role="listitem">
+          <div class="step-number" aria-hidden="true">1</div>
+          <h3>Koop &amp; Download</h3>
+          <p>Kies je pakket op Gumroad. Betaal veilig. Download direct je Canva-bestanden en captions.</p>
+        </div>
+        <div class="step" role="listitem">
+          <div class="step-number" aria-hidden="true">2</div>
+          <h3>Pas aan in Canva</h3>
+          <p>Open de template, voeg je foto toe, verander je naam. Klaar in minder dan 5 minuten per post.</p>
+        </div>
+        <div class="step" role="listitem">
+          <div class="step-number" aria-hidden="true">3</div>
+          <h3>Post &amp; Groei</h3>
+          <p>Kopieer de caption, plak in Instagram, post. Elke dag professioneel aanwezig — zonder stress.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="prijzen" aria-label="Prijzen en pakketten">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Pakketten</span>
+        <h2>Kies wat bij je past</h2>
+        <p>Eenmalig of maandelijks — geen verborgen kosten, direct te gebruiken</p>
+      </div>
+
+      <div class="pricing-grid" role="list">
+
+        <!-- STARTER -->
+        <div class="pricing-card" role="listitem" aria-label="Starter pakket, 19 euro eenmalig">
+          <div class="plan-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <div class="plan-name">Starter</div>
+          <div class="plan-desc">Perfect om mee te beginnen. 1 maand content klaar.</div>
+          <div class="plan-price">
+            <span class="price-currency">€</span>
+            <span class="price-amount">19</span>
+          </div>
+          <div class="price-period">eenmalig — geen abonnement</div>
+          <ul class="features-list" role="list">
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              30 Instagram feed templates (Canva)
+            </li>
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              30 Nederlandstalige captions
+            </li>
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              6 thema's: motivatie, tips, voeding...
+            </li>
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Handleiding: aanpassen in 5 min
+            </li>
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Direct na betaling te downloaden
+            </li>
+          </ul>
+          <a href="https://gum.co/fitcontent-starter" class="btn-plan" target="_blank" rel="noopener" aria-label="Koop Starter pakket voor 19 euro">
+            Start nu voor €19 →
+          </a>
+        </div>
+
+        <!-- PRO (POPULAR) -->
+        <div class="pricing-card popular" role="listitem" aria-label="Pro pakket, aanbevolen, 39 euro eenmalig">
+          <div class="popular-badge" aria-label="Meest populair">MEEST POPULAIR</div>
+          <div class="plan-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-desc">Complete content machine. 2 maanden content voor feed én stories.</div>
+          <div class="plan-price">
+            <span class="price-currency">€</span>
+            <span class="price-amount">39</span>
+          </div>
+          <div class="price-period">eenmalig — geen abonnement</div>
+          <div class="price-note">Minder dan 1 trainingsuur — voor 2 maanden content</div>
+          <ul class="features-list" role="list">
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              60 Instagram feed templates (Canva)
+            </li>
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              30 Instagram Stories templates
+            </li>
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              60 captions (feed + stories)
+            </li>
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Content kalender (Google Sheets)
+            </li>
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              5 bonus "viraal idee" posts
+            </li>
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Prioriteit e-mail support
+            </li>
+          </ul>
+          <a href="https://gum.co/fitcontent-pro" class="btn-plan primary" target="_blank" rel="noopener" aria-label="Koop Pro pakket voor 39 euro">
+            Koop Pro voor €39 →
+          </a>
+        </div>
+
+        <!-- ABONNEMENT -->
+        <div class="pricing-card" role="listitem" aria-label="Maandabonnement, 19 euro per maand">
+          <div class="plan-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <div class="plan-name">Maandabonnement</div>
+          <div class="plan-desc">Elke maand verse content. Nooit meer nadenken.</div>
+          <div class="plan-price">
+            <span class="price-currency">€</span>
+            <span class="price-amount">19</span>
+          </div>
+          <div class="price-period">per maand — opzegbaar wanneer je wilt</div>
+          <div class="price-note">Jaarabonnement: €149 (35% korting)</div>
+          <ul class="features-list" role="list">
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Elke maand 30 verse templates
+            </li>
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Seizoensgebonden thema's
+            </li>
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Toegang tot alle vorige maanden
+            </li>
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Bonus: 1 feature-thema/maand
+            </li>
+            <li class="feature-item">
+              <div class="check-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Altijd opzegbaar — geen contract
+            </li>
+          </ul>
+          <a href="https://gum.co/fitcontent-abo" class="btn-plan" target="_blank" rel="noopener" aria-label="Start maandabonnement voor 19 euro per maand">
+            Start abonnement →
+          </a>
+        </div>
+
+      </div>
+
+      <p class="pricing-note" role="note">
+        Liever eerst proberen?
+        <a href="https://gum.co/fitcontent-gratis" target="_blank" rel="noopener" style="color:var(--primary);font-weight:600">Download 5 gratis templates</a> — geen e-mailadres nodig.
+      </p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" aria-label="Ervaringen van personal trainers">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Wat andere PT's zeggen</span>
+        <h2>Van "geen tijd" naar "elke dag gepost"</h2>
+        <p>Personal trainers uit heel Nederland en België gingen je voor</p>
+      </div>
+
+      <div class="testimonials-grid" role="list">
+        <article class="testimonial-card" role="listitem">
+          <div class="stars" aria-label="5 sterren beoordeling">
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <blockquote class="testimonial-text">
+            "Ik postte vroeger 2x per week en vond het al veel. Nu post ik elke dag dankzij FitContent NL. Mijn Instagram groeide in 6 weken van 340 naar 820 volgers. En ik heb er amper meer tijd in gestoken."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">L</div>
+            <div>
+              <div class="author-name">Laura V.</div>
+              <div class="author-role">Personal Trainer, Amsterdam</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card" role="listitem">
+          <div class="stars" aria-label="5 sterren beoordeling">
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <blockquote class="testimonial-text">
+            "De Nederlandstalige captions zijn goud waard. Ik heb vroeger geprobeerd met Engelse templates maar dat voelde niet authentiek. Dit past echt bij mij en mijn klanten. €39 voor 2 maanden content — geen twijfel."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#F97316,#FBBF24)" aria-hidden="true">M</div>
+            <div>
+              <div class="author-name">Michiel D.</div>
+              <div class="author-role">Fitness Coach, Gent</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card" role="listitem">
+          <div class="stars" aria-label="5 sterren beoordeling">
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <blockquote class="testimonial-text">
+            "Via een maandabonnement krijg ik elke maand 30 verse templates. Ik besteed er nog geen uur per week aan. Mijn klanten zeggen dat mijn Instagram er nu heel professioneel uitziet. Absoluut de moeite waard."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#10B981,#34D399)" aria-hidden="true">R</div>
+            <div>
+              <div class="author-name">Roos S.</div>
+              <div class="author-role">PT &amp; Voedingscoach, Utrecht</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-label="Veelgestelde vragen">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2>Veelgestelde vragen</h2>
+        <p>Alles wat je wil weten, beantwoord</p>
+      </div>
+
+      <div class="faq-list" role="list">
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Heb ik Canva Pro nodig?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Nee. Canva Gratis is voldoende om de templates te openen en aan te passen. Met Canva Pro heb je toegang tot meer fonts en elementen, maar dat is niet vereist.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Hoe snel ontvang ik mijn templates?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Direct na betaling. Je ontvangt een e-mail van Gumroad met de downloadlink. Je kunt meteen beginnen — op elk apparaat, ook mobiel.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Kan ik de templates aanpassen met mijn eigen logo en kleuren?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Ja, volledig. Alle templates zijn bewerkbaar in Canva. Je past kleuren, fonts, foto's en logo aan. De handleiding legt stap voor stap uit hoe je dat in minder dan 5 minuten doet.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Kan ik het abonnement op elk moment opzeggen?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Ja, altijd. Je beheert je abonnement zelf via Gumroad. Opzeggen kan op elk moment, je hebt geen minimum looptijd. De templates die je al ontvangen hebt, mag je blijven gebruiken.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Mag ik de templates gebruiken voor mijn klanten?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>De templates zijn bedoeld voor jouw eigen social media kanalen. Wil je ze gebruiken voor meerdere PT's of een agency, neem dan contact op voor een meergebruikerslicentie.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+            Is er een gratis versie om te proberen?
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Ja! Download 5 gratis templates via de knop bovenaan de pagina. Geen e-mailadres nodig, geen verborgen kosten. Gewoon direct proberen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta" aria-label="Actie sectie">
+    <div class="container">
+      <h2>Klaar om elke dag te posten<br>zonder er uren aan te besteden?</h2>
+      <p>Start vandaag. Download 5 gratis templates of kies direct het pakket dat bij je past.</p>
+      <div class="final-cta-actions">
+        <a href="#prijzen" class="btn-primary" aria-label="Ga naar prijzen en pakketten">
+          Bekijk pakketten →
+        </a>
+        <a href="https://gum.co/fitcontent-gratis" class="btn-white" target="_blank" rel="noopener" aria-label="Download 5 gratis templates">
+          5 gratis templates
+        </a>
+      </div>
+      <p class="guarantee">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:4px" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Veilige betaling via Gumroad. Direct te downloaden. Altijd opzegbaar.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">FitContent<span>NL</span></div>
+        <ul class="footer-links" role="list">
+          <li><a href="mailto:hallo@fitcontentnl.nl">Contact</a></li>
+          <li><a href="#" onclick="return false">Privacybeleid</a></li>
+          <li><a href="#" onclick="return false">Algemene voorwaarden</a></li>
+        </ul>
+        <div class="footer-copy">&copy; 2026 FitContent NL. Alle rechten voorbehouden.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    function toggleMenu(btn) {
+      const links = document.getElementById('navLinks');
+      const isOpen = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+    }
+
+    // FAQ accordion
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+    }
+
+    // Stat counter animation
+    function animateCounter(el) {
+      const target = parseInt(el.getAttribute('data-target'));
+      if (!target) return;
+      const duration = 1500;
+      const start = performance.now();
+      function update(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(eased * target) + '+';
+        if (progress < 1) requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
+    }
+
+    // Intersection Observer for counters
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counters = entry.target.querySelectorAll('[data-target]');
+          counters.forEach(animateCounter);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const statsSection = document.querySelector('.stats');
+    if (statsSection) observer.observe(statsSection);
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const navbarHeight = 80;
+          const top = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
